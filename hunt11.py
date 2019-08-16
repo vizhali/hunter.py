@@ -1,15 +1,15 @@
 check=int(input())
 zero=0
-lists=list(map(int,input().split()))
-news=[]
+list=list(map(int,input().split()))
+new=[]
 for i in range(0,check):
-    if((lists.count(lists[i]))>=2):
-      if lists[i] not in news:
-        news.append(lists[i])
+    if((list.count(list[i]))>=2):
+      if list[i] not in new:
+        new.append(list[i])
         zero=1
 if(zero==0):
   print("unique")
 else:
   for i in range(0,check):
-    print(min(news),end=" ")
-    news.remove(min(news))
+    print(min(new),end=" ")
+    new.remove(min(new))
